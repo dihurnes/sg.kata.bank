@@ -13,16 +13,7 @@ public class ClientTest {
 
         Client henry = new Client("Henry").ouvrirCompte(verifCompte);
 
-        verifCompte.depot(100.0);
-
-        assertEquals("Releve for Henry\n" +
-                "\n" +
-                "Verification Compte\n" +
-                "  depot $100.00\n" +
-                "Total $100.00\n" +
-                "\n" +
-
-                "Total dans le compte $100.00", henry.getReleve());
+        verifCompte.depot(90.0);
     }
 
     @Test
@@ -31,4 +22,6 @@ public class ClientTest {
     }
 
 
+    
+    
 }

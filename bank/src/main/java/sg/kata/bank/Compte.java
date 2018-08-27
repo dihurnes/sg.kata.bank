@@ -23,7 +23,7 @@ public class Compte {
         }
     }
 
-public void withdraw(double montant) {
+public void retrait(double montant) {
     if (montant <= 0) {
         throw new IllegalArgumentException("montant must be greater than zero");
     } else {

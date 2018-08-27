@@ -42,10 +42,7 @@ import static java.lang.Math.abs;
 	    private String relevePourCompte(Compte a) {
 	        String s = "";
 
-	       //Translate to pretty Compte type
-	       
 
-	        //Now total up all the transactions
 	        double total = 0.0;
 	        for (Transaction t : a.transactions) {
 	            s += "  " + (t.montant < 0 ? "retrait" : "depot") + " " + toDollars(t.montant) + "\n";
